@@ -1,9 +1,11 @@
-S-specific
+# S-specific
 .DS_Store
 
 # Editor swapfiles
 .*.sw?
 *~
+
+*.log
 
 # Vagrant stuff
 acceptance_config.yml
@@ -13,6 +15,7 @@ boxes/*
 /website/build
 /vagrant-spec.config.rb
 test/vagrant-spec/.vagrant/
+.vagrant/
 
 # Bundler/Rubygems
 *.gem
