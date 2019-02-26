@@ -79,13 +79,13 @@ Vagrant.configure("2") do |config|
       git clone https://github.com/commonsense/conceptnet-puppet
 
       cd conceptnet-puppet
-#      sudo sh puppet-setup.sh
-#      sudo sh puppet-apply.sh
-#
-#      sudo su conceptnet
-#      cd ~/conceptnet5
-#
-#      ./build.sh
+      yes | sudo sh puppet-setup.sh
+      sudo sh puppet-apply.sh
+
+      sudo su conceptnet
+      cd ~/conceptnet5
+
+      ./build.sh
 
       date > /etc/bootstrapped
   SHELL
